@@ -1,0 +1,16 @@
+#!/bin/bash
+
+export mon_envi=~/RAZYY/bin
+export PATH=$mon_envi:$PATH
+
+# Set custom prompt
+echo 'export PS1="RAZY\w $ "' >> ~/.bashrc
+
+# Source additional script
+source /RAZY/bin/set_path.sh
+clear
+neofetch
+bash
+
+#bash --rcfile <(echo "export PATH=\$mon_envi")
+
